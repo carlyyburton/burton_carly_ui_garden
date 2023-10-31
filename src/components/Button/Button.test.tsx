@@ -14,10 +14,10 @@ describe("Running Test #1", () => {
 });
 
 describe("Running Test #2", () => {
-  test("Check Button Disabled", () => {
+  test("Check Button Color Change When Disabled", () => {
     render(<Button text="Button" disabled />);
     expect(
       screen.getByRole("button", { name: "Button" })
-    ).toBeDisabled();
+    ).toHaveStyle({ opacity: '0.5' })
   });
 });
