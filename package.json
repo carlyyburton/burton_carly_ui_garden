@@ -54,6 +54,8 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "@tanstack/match-sorter-utils": "^8.8.4",
+    "@tanstack/react-table": "^8.10.7",
     "tslib": "^2.6.2"
   },
   "publishConfig": {

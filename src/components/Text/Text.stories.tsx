@@ -17,7 +17,7 @@ export const Primary: Story = (args) => (
 Primary.args = {
   primary: true,
   disabled: false,
-  text: "This is text.",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };
 
 export const Disabled: Story = (args) => (
@@ -26,5 +26,5 @@ export const Disabled: Story = (args) => (
 Disabled.args = {
   primary: false,
   disabled: true,
-  text: "This text is disabled.",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };

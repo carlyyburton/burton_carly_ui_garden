@@ -6,7 +6,6 @@ const StyledLabel = styled.label<LabelProps>`
   border: 0;
   line-height: 1;
   font-size: 20px;
-  font-weight: bold;
   color: ${(props) => (props.primary ? "#000000" : "#3B0070")};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   font-size: ${(props) =>

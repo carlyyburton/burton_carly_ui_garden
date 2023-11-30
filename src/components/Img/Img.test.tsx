@@ -2,22 +2,22 @@ import React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import Label from "./Label";
+import Img from "./Img";
 
 describe("Running Test #1", () => {
-  test("Check Label Visible", () => {
-    render(<Label label="Label"/>);
+  test("Check Image Visible", () => {
+    render(<Img />);
     expect(
-      document.querySelector('label')
+      document.querySelector('img')
     ).toBeVisible();
   });
 });
 
 describe("Running Test #2", () => {
-  test("Check Label Text Colour Change When Disabled", () => {
-    render(<Label label="Label" disabled />);
+  test("Check Image Color Change When Disabled", () => {
+    render(<Img disabled/>);
     expect(
-      document.querySelector('label')
+      document.querySelector('img')
     ).toHaveStyle({ opacity: '0.5' })
   });
 });
