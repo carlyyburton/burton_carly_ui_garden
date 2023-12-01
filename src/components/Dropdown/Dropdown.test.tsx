@@ -6,18 +6,18 @@ import Dropdown from "./Dropdown";
 
 describe("Running Test #1", () => {
   test("Check Dropdown Visible", () => {
-    render(<Dropdown />);
+    render(<Dropdown options={[]} />);
     expect(
-      screen.getByRole("dropdown", { name: "Dropdown" })
+      document.querySelector("label")
     ).toBeVisible();
   });
 });
 
 describe("Running Test #2", () => {
   test("Check Dropdown Colour Change When Disabled", () => {
-    render(<Dropdown disabled />);
+    render(<Dropdown options={[]} disabled />);
     expect(
-      document.querySelector('select')
+      document.querySelector("label")
     ).toHaveStyle({ opacity: '0.5' })
   });
 });

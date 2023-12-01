@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import imageFile from '/src/components/Img/cat.jpg';
+const imageFile = "/src/components/Img/cat.jpg";
 import Img from "./Img";
 
 const meta: Meta<typeof Img> = {

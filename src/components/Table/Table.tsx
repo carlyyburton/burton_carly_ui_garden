@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import { TableProps } from "./Table.types";
 
@@ -57,7 +57,6 @@ const Table: React.FC<TableProps> = ({
   ...props
 }) => {
   return (
-    <Fragment>
       <StyledTable
         primary={primary}
         disabled={disabled}
@@ -128,7 +127,6 @@ const Table: React.FC<TableProps> = ({
           </StyledTr>
         </StyledTfoot>
       </StyledTable>
-    </Fragment>
   )
 };
 
