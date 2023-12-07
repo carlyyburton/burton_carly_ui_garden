@@ -1,10 +1,10 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import Radio from './Radio';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
+import Radio from "./Radio";
 
 const meta: Meta<typeof Radio> = {
   component: Radio,
-  title: 'UI-Garden/Radio',
+  title: "UI-Garden/Radio",
   argTypes: {},
 };
 export default meta;
@@ -17,7 +17,7 @@ export const Primary: Story = (args) => (
 Primary.args = {
   primary: true,
   disabled: false,
-  label: 'Radio Button',
+  label: "Radio Button",
 };
 
 export const Disabled: Story = (args) => (
@@ -26,5 +26,5 @@ export const Disabled: Story = (args) => (
 Disabled.args = {
   primary: false,
   disabled: true,
-  label: 'Radio Button',
+  label: "Radio Button",
 };

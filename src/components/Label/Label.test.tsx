@@ -1,19 +1,19 @@
-import React from 'react';
-import '@testing-library/jest-dom';
-import { render } from '@testing-library/react';
+import React from "react";
+import "@testing-library/jest-dom";
+import { render } from "@testing-library/react";
 
-import Label from './Label';
+import Label from "./Label";
 
-describe('Running Test #1', () => {
-  test('Check Label Visible', () => {
+describe("Running Test #1", () => {
+  test("Check Label Visible", () => {
     render(<Label label="Label" />);
-    expect(document.querySelector('label')).toBeVisible();
+    expect(document.querySelector("label")).toBeVisible();
   });
 });
 
-describe('Running Test #2', () => {
-  test('Check Label Text Colour Change When Disabled', () => {
+describe("Running Test #2", () => {
+  test("Check Label Text Colour Change When Disabled", () => {
     render(<Label label="Label" disabled />);
-    expect(document.querySelector('label')).toHaveStyle({ opacity: '0.5' });
+    expect(document.querySelector("label")).toHaveStyle({ opacity: "0.5" });
   });
 });

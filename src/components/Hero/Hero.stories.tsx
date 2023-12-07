@@ -1,11 +1,11 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import Hero from './Hero';
-import imageFile from '/src/components/Hero/banner.jpg';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
+import Hero from "./Hero";
+import imageFile from "/src/components/Hero/banner.jpg";
 
 const meta: Meta<typeof Hero> = {
   component: Hero,
-  title: 'UI-Garden/Hero',
+  title: "UI-Garden/Hero",
   argTypes: {},
 };
 export default meta;
@@ -17,11 +17,11 @@ export const Primary: Story = (args) => (
 );
 Primary.args = {
   src: imageFile,
-  alt: 'Hero image.',
+  alt: "Hero image.",
   primary: true,
   disabled: false,
-  p: 'Let me build your website.',
-  text: 'Contact Me',
+  p: "Let me build your website.",
+  text: "Contact Me",
 };
 
 export const Disabled: Story = (args) => (
@@ -29,9 +29,9 @@ export const Disabled: Story = (args) => (
 );
 Disabled.args = {
   src: imageFile,
-  alt: 'Hero image.',
+  alt: "Hero image.",
   primary: false,
   disabled: true,
-  p: 'Let me build your website.',
-  text: 'Contact Me',
+  p: "Let me build your website.",
+  text: "Contact Me",
 };

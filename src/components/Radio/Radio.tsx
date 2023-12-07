@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { RadioProps } from './Radio.types';
+import React from "react";
+import styled from "styled-components";
+import { RadioProps } from "./Radio.types";
 
 const StyledInput = styled.input<RadioProps>``;
 

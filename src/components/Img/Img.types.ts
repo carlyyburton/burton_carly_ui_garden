@@ -3,5 +3,5 @@ export interface ImgProps {
   alt?: string;
   primary?: boolean;
   disabled?: boolean;
-  size?: 'small' | 'medium' | 'large';
+  size?: "small" | "medium" | "large";
 }

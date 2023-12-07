@@ -5,5 +5,5 @@ export interface CardProps {
   alt?: string;
   primary?: boolean;
   disabled?: boolean;
-  size?: 'small' | 'medium' | 'large';
+  size?: "small" | "medium" | "large";
 }

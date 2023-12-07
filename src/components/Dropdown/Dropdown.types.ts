@@ -1,4 +1,4 @@
-import { ChangeEventHandler, MouseEventHandler } from 'react';
+import { ChangeEventHandler, MouseEventHandler } from "react";
 
 export interface DropdownProps {
   label?: string;

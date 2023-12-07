@@ -1,4 +1,4 @@
-import { ChangeEventHandler } from 'react';
+import { ChangeEventHandler } from "react";
 
 export interface RadioProps {
   primary?: boolean;

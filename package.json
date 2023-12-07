@@ -13,7 +13,6 @@
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "eslint-plugin-react": "^7.33.2",
-    "husky": "^8.0.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
@@ -30,16 +29,18 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "prettier --check . && eslint src/**/*.{js,jsx,ts,tsx,json}",
-    "format": "prettier --write . && eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint": "prettier --check . && eslint",
+    "format": "prettier --write . && eslint --fix",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*": "prettier --write . && eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}' && npm run test"
+    "*": [
+      "prettier --write .",
+      "eslint --fix",
+      "npm run test"
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.--fix": "prettier --write"
   },
   "eslintConfig": {
     "extends": [
@@ -85,6 +86,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
+    "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "lint-staged": "^15.2.0",
     "prettier": "3.1.0",
