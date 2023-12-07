@@ -9,11 +9,7 @@ const StyledLabel = styled.label<LabelProps>`
   color: ${(props) => (props.primary ? "#000000" : "#3B0070")};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   font-size: ${(props) =>
-    props.size === "small"
-      ? "12px"
-      : props.size === "large"
-      ? "50px"
-      : "25px"};
+    props.size === "small" ? "12px" : props.size === "large" ? "50px" : "25px"};
 `;
 
 const Label: React.FC<LabelProps> = ({
@@ -24,15 +20,10 @@ const Label: React.FC<LabelProps> = ({
   ...props
 }) => {
   return (
-    <StyledLabel
-      primary={primary}
-      disabled={disabled}
-      size={size}
-      {...props}>
+    <StyledLabel primary={primary} disabled={disabled} size={size} {...props}>
       {label}
     </StyledLabel>
-  )
+  );
 };
 
 export default Label;
-

@@ -1,8 +1,7 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Hero from "./Hero";
-import imageFile from '/src/components/Hero/banner.jpg';
-
+import imageFile from "/src/components/Hero/banner.jpg";
 
 const meta: Meta<typeof Hero> = {
   component: Hero,
@@ -18,7 +17,7 @@ export const Primary: Story = (args) => (
 );
 Primary.args = {
   src: imageFile,
-  alt: 'Hero image.',
+  alt: "Hero image.",
   primary: true,
   disabled: false,
   p: "Let me build your website.",
@@ -30,7 +29,7 @@ export const Disabled: Story = (args) => (
 );
 Disabled.args = {
   src: imageFile,
-  alt: 'Hero image.',
+  alt: "Hero image.",
   primary: false,
   disabled: true,
   p: "Let me build your website.",

@@ -7,17 +7,13 @@ import Dropdown from "./Dropdown";
 describe("Running Test #1", () => {
   test("Check Dropdown Visible", () => {
     render(<Dropdown options={[]} />);
-    expect(
-      document.querySelector("label")
-    ).toBeVisible();
+    expect(document.querySelector("label")).toBeVisible();
   });
 });
 
 describe("Running Test #2", () => {
   test("Check Dropdown Colour Change When Disabled", () => {
     render(<Dropdown options={[]} disabled />);
-    expect(
-      document.querySelector("label")
-    ).toHaveStyle({ opacity: '0.5' })
+    expect(document.querySelector("label")).toHaveStyle({ opacity: "0.5" });
   });
 });

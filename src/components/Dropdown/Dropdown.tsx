@@ -13,7 +13,7 @@ const StyledSelect = styled.select<DropdownProps>`
 `;
 
 const StyledOptions = styled.option<DropdownProps>`
-  pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
+  pointer-events: ${(props) => (props.disabled ? "none" : "auto")};
   font-size: 15px;
 `;
 
@@ -26,47 +26,48 @@ const StyledLabel = styled.label<DropdownProps>`
 `;
 
 const Dropdown: React.FC<DropdownProps> = ({
-   name,
-   onClick,
-   options,
-   primary,
-   disabled,
-   label,
-   onChange,
-   ...props
- }) => {
-   return (
+  name,
+  onClick,
+  options,
+  primary,
+  disabled,
+  label,
+  onChange,
+  ...props
+}) => {
+  return (
     <Fragment>
       <StyledLabel
         onChange={onChange}
         label={label}
         primary={primary}
         disabled={disabled}
-        {...props}>
+        {...props}
+      >
         {label}
       </StyledLabel>
       <StyledSelect
         onClick={onClick}
         disabled={disabled}
         name={name}
-        {...props}>
-          {name}
-          {options.map(
-          (options: string, index: number): JSX.Element => {
-            return (
-              <StyledOptions
+        {...props}
+      >
+        {name}
+        {options.map((options: string, index: number): JSX.Element => {
+          return (
+            <StyledOptions
               options={options}
               onClick={onClick}
-                key={index}
-                {...props}>
-                {options}
-              </StyledOptions>
-            );
-          }
-        )}
+              key={index}
+              {...props}
+            >
+              {options}
+            </StyledOptions>
+          );
+        })}
       </StyledSelect>
     </Fragment>
-   );
-  };
+  );
+};
 
 export default Dropdown;

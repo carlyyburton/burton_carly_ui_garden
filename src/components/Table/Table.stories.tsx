@@ -12,7 +12,7 @@ export default meta;
 type Story = StoryObj<typeof Table>;
 
 export const Primary: Story = (args) => (
-<Table data-test-id="InputField-id" {...args} />
+  <Table data-test-id="InputField-id" {...args} />
 );
 Primary.args = {
   primary: true,

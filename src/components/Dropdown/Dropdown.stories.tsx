@@ -17,8 +17,17 @@ export const Primary: Story = (args) => (
 Primary.args = {
   label: "Select your Province: ",
   name: "option",
-  options: ["Alberta", "British Columbia", "Manitoba", "Newfoundland and Labrador",
-            "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"],
+  options: [
+    "Alberta",
+    "British Columbia",
+    "Manitoba",
+    "Newfoundland and Labrador",
+    "Nova Scotia",
+    "Ontario",
+    "Prince Edward Island",
+    "Quebec",
+    "Saskatchewan",
+  ],
   primary: true,
   disabled: false,
 };
@@ -29,8 +38,17 @@ export const Disabled: Story = (args) => (
 Disabled.args = {
   label: "Select your Province: ",
   name: "option",
-  options: ["Alberta", "British Columbia", "Manitoba", "Newfoundland and Labrador",
-            "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"],
+  options: [
+    "Alberta",
+    "British Columbia",
+    "Manitoba",
+    "Newfoundland and Labrador",
+    "Nova Scotia",
+    "Ontario",
+    "Prince Edward Island",
+    "Quebec",
+    "Saskatchewan",
+  ],
   primary: false,
   disabled: true,
 };

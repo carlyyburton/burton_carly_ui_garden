@@ -7,8 +7,8 @@ const StyledImg = styled.img<ImgProps>`
     props.size === "small"
       ? "200px"
       : props.size === "large"
-      ? "1000px"
-      : "500px"};
+        ? "1000px"
+        : "500px"};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 `;
 
@@ -27,13 +27,9 @@ const Img: React.FC<ImgProps> = ({
       src={src}
       alt={alt}
       size={size}
-      {...props} />
+      {...props}
+    />
   );
 };
-
-
-
-
-
 
 export default Img;

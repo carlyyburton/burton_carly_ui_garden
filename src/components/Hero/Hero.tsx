@@ -18,7 +18,6 @@ const StyledHero = styled.p<HeroProps>`
   padding: 30px 30px 100px 30px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-
 `;
 
 const StyledButton = styled.button<HeroProps>`
@@ -66,28 +65,28 @@ const Hero: React.FC<HeroProps> = ({
   ...props
 }) => {
   return (
-    <><StyledImg
-      primary={primary}
-      disabled={disabled}
-      src={src}
-      alt={alt}
-      {...props} /><StyledHero
-        p={p}
+    <>
+      <StyledImg
         primary={primary}
         disabled={disabled}
-        {...props}>
+        src={src}
+        alt={alt}
+        {...props}
+      />
+      <StyledHero p={p} primary={primary} disabled={disabled} {...props}>
         {p}
-      </StyledHero><StyledButton
+      </StyledHero>
+      <StyledButton
         type="button"
         onClick={onClick}
         primary={primary}
         disabled={disabled}
-        {...props}>
+        {...props}
+      >
         {text}
-      </StyledButton></>
+      </StyledButton>
+    </>
   );
 };
 
-
 export default Hero;
-
