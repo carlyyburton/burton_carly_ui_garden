@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { CardProps } from "./Card.types";
+import React from 'react';
+import styled from 'styled-components';
+import { CardProps } from './Card.types';
 
 const StyledCard = styled.div<CardProps>`
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
@@ -38,7 +38,6 @@ const Card: React.FC<CardProps> = ({
   alt,
   primary,
   disabled,
-  text,
   ...props
 }) => {
   return (

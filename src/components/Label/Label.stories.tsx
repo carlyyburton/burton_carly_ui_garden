@@ -1,10 +1,10 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import Label from "./Label";
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import Label from './Label';
 
 const meta: Meta<typeof Label> = {
   component: Label,
-  title: "UI-Garden/Label",
+  title: 'UI-Garden/Label',
   argTypes: {},
 };
 export default meta;
@@ -17,7 +17,7 @@ export const Primary: Story = (args) => (
 Primary.args = {
   primary: true,
   disabled: false,
-  label: "Label",
+  label: 'Label',
 };
 
 export const Disabled: Story = (args) => (
@@ -26,5 +26,5 @@ export const Disabled: Story = (args) => (
 Disabled.args = {
   primary: false,
   disabled: true,
-  label: "Label",
+  label: 'Label',
 };

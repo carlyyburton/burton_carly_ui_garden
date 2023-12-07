@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import styled from "styled-components";
-import { DropdownProps } from "./Dropdown.types";
+import React, { Fragment } from 'react';
+import styled from 'styled-components';
+import { DropdownProps } from './Dropdown.types';
 
 const StyledSelect = styled.select<DropdownProps>`
   border: 0;
@@ -13,7 +13,7 @@ const StyledSelect = styled.select<DropdownProps>`
 `;
 
 const StyledOptions = styled.option<DropdownProps>`
-  pointer-events: ${(props) => (props.disabled ? "none" : "auto")};
+  pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
   font-size: 15px;
 `;
 

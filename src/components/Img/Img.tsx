@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { ImgProps } from "./Img.types";
+import React from 'react';
+import styled from 'styled-components';
+import { ImgProps } from './Img.types';
 
 const StyledImg = styled.img<ImgProps>`
   width: ${(props) =>
-    props.size === "small"
-      ? "200px"
-      : props.size === "large"
-        ? "1000px"
-        : "500px"};
+    props.size === 'small'
+      ? '200px'
+      : props.size === 'large'
+        ? '1000px'
+        : '500px'};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 `;
 

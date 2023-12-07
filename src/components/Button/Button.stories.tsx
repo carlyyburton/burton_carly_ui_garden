@@ -1,10 +1,10 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import Button from "./Button";
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import Button from './Button';
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: "UI-Garden/Button",
+  title: 'UI-Garden/Button',
   argTypes: {},
 };
 export default meta;
@@ -17,7 +17,7 @@ export const Primary: Story = (args) => (
 Primary.args = {
   primary: true,
   disabled: false,
-  text: "Enabled",
+  text: 'Enabled',
 };
 
 export const Disabled: Story = (args) => (
@@ -26,5 +26,5 @@ export const Disabled: Story = (args) => (
 Disabled.args = {
   primary: false,
   disabled: true,
-  text: "Disabled",
+  text: 'Disabled',
 };

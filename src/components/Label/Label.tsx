@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { LabelProps } from "./Label.types";
+import React from 'react';
+import styled from 'styled-components';
+import { LabelProps } from './Label.types';
 
 const StyledLabel = styled.label<LabelProps>`
   border: 0;
   line-height: 1;
   font-size: 20px;
-  color: ${(props) => (props.primary ? "#000000" : "#3B0070")};
+  color: ${(props) => (props.primary ? '#000000' : '#3B0070')};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   font-size: ${(props) =>
-    props.size === "small" ? "12px" : props.size === "large" ? "50px" : "25px"};
+    props.size === 'small' ? '12px' : props.size === 'large' ? '50px' : '25px'};
 `;
 
 const Label: React.FC<LabelProps> = ({

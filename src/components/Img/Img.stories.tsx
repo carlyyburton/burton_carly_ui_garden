@@ -1,11 +1,11 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import Img from "./Img";
-import imageFile from "/src/components/Img/cat.jpg";
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import Img from './Img';
+import imageFile from '/src/components/Img/cat.jpg';
 
 const meta: Meta<typeof Img> = {
   component: Img,
-  title: "UI-Garden/Img",
+  title: 'UI-Garden/Img',
   argTypes: {},
 };
 export default meta;
@@ -17,7 +17,7 @@ export const Primary: Story = (args) => (
 );
 Primary.args = {
   src: imageFile,
-  alt: "Image of a cat.",
+  alt: 'Image of a cat.',
   primary: true,
   disabled: false,
 };
@@ -27,7 +27,7 @@ export const Disabled: Story = (args) => (
 );
 Disabled.args = {
   src: imageFile,
-  alt: "Image of a cat.",
+  alt: 'Image of a cat.',
   primary: false,
   disabled: true,
 };
