@@ -1,6 +1,6 @@
 # burton_carly_ui_garden
 
-## To run this app on localhost:8083 run `PORT=8083 npm run start` in the project directory.
+## To run this app on localhost:8018 run `PORT=8018 npm run start` in the project directory.
 
 ## Available Scripts
 

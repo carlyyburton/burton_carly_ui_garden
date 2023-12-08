@@ -8,7 +8,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "prettier"
+    "prettier",
+    "plugin:mdx/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -19,6 +20,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "react"],
+  "ignorePatterns": ["*.md"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "spaced-comment": "error",
