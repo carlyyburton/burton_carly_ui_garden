@@ -20,7 +20,7 @@ Primary.args = {
   th: ["First Name", "Last Name", "Job Title", "Email"],
   row1: ["John", "Stevens", "Software Engineer", "john@gmail.com"],
   row2: ["Olivia", "Smith", "Web Designer", "olivia@yahoo.com"],
-  footer: ["Mark", "Jones", "Accountant", "mark@hotmail.com"],
+  footer: ["Mark", "Williams", "Accountant", "mark@hotmail.com"],
 };
 
 export const Disabled: Story = (args) => (
@@ -32,5 +32,5 @@ Disabled.args = {
   th: ["First Name", "Last Name", "Job Title", "Email"],
   row1: ["John", "Stevens", "Software Engineer", "john@gmail.com"],
   row2: ["Olivia", "Smith", "Web Designer", "olivia@yahoo.com"],
-  footer: ["Mark", "Jones", "Accountant", "mark@hotmail.com"],
+  footer: ["Mark", "Williams", "Accountant", "mark@hotmail.com"],
 };
