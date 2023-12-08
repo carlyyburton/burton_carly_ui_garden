@@ -3,9 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
-      - alpha
-      - beta
+      - master
 
 jobs:
   test:
