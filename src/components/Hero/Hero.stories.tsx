@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Hero from "./Hero";
-const imageFile = "/src/components/Hero/banner.jpg";
+const imageFile = require("/src/components/Hero/banner.jpg"); // eslint-disable global-require
 
 const meta: Meta<typeof Hero> = {
   component: Hero,

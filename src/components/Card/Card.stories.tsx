@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Card from "./Card";
-const imageFile = "/src/components/Card/avatar.jpg";
+const imageFile = require("/src/components/Card/avatar.jpg");
 
 const meta: Meta<typeof Card> = {
   component: Card,
