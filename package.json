@@ -34,13 +34,13 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*": [
-      "prettier --write .",
-      "eslint --fix",
+    "src/**/*.(spec|test).tsx": [
       "npm run test"
     ],
-    "*.js": "eslint --cache --fix",
-    "*.--fix": "prettier --write"
+    "*": [
+      "prettier --write .",
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": [
